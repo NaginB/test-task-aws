@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@layer base {
+  body {
+    @apply bg-background text-text;
+    font-optical-sizing: auto;
+    background-image: url("/images/Vectors.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}
+
+@layer utilities {
+}
+
+:root {
+  /* Core Brand Colors */
+  --color-primary: #2eec84;
+  /* Bright green */
+  --color-error: #f25c5c;
+  /* Red */
+
+  /* Deep navy teal */
+  --color-input: #184a5a;
+  /* Muted teal */
+  --color-card: #042b36;
+  /* Dark teal */
+
+  /* Global Background (screen dark) */
+  --color-screen-bg: #060e23;
+  /* Very dark navy */
+}
+
+/* Utility Classes (optional) */
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-error {
+  background-color: var(--color-error);
+}
+
+.bg-input {
+  background-color: var(--color-input);
+}
+
+.bg-card {
+  background-color: var(--color-card);
+}
+
+.bg-screen {
+  background-color: var(--color-screen-bg);
+}
+
+/* =========================================
+   HEADINGS
+========================================= */
+
+/* Heading One */
+.heading-1 {
+  font-weight: 600;
+  /* SemiBold */
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: 0;
+}
+
+/* Heading Two */
+.heading-2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0;
+}
+
+/* Heading Three */
+.heading-3 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0;
+}
+
+/* Heading Four */
+.heading-4 {
+  font-weight: 700;
+  /* Bold */
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0;
+}
+
+/* Heading Five */
+.heading-5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+/* Heading Six */
+.heading-6 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+/* =========================================
+   BODY TEXT
+========================================= */
+
+/* Body - Large */
+.body-lg {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0;
+}
+
+/* Body - Regular */
+.body-md {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+/* Body - Small */
+.body-sm {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+/* Body - Extra Small */
+.body-xs {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+/* Caption */
+.caption {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0;
+}
+
+/* Remove arrows in Chrome, Safari, Edge */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove arrows in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
